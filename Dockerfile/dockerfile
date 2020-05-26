@@ -13,7 +13,7 @@ RUN sudo apt update
 RUN pip3 install discord.py
 RUN pip3 install ${Dependancies}
 
-RUN echo "Installed Dependancies"
+RUN echo "Installed Dependencies"
 
 #Run Bot
 CMD python3 ${BOTFileName}
