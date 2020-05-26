@@ -1,7 +1,7 @@
 # pythondiscordbots
 Run Python-based discord bots in Docker
 
-<h2> Docker Image
+<h2> Docker Image</h2>
 <strong>NOTE:</strong> Replace bot.py and the pip3 Dependencies with values that suit your needs.
 Discord.py is preinstalled!
 
