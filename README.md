@@ -19,18 +19,20 @@ docker create \
   tomscatbilly/pythondiscordbots
 ```
 
-<h2> Adding other pip3 dependencies </h2>
+<h2> Adding other  dependencies </h2>
 Similar to how to include multiple libraries with one command:
 <h3>Desktop CLI: </h3>
 
 ```
 pip3 install dep1 dep2 dep3 ...
+sudo apt install dep1 dep2 dep3
 ```
 
 <h3>Docker Environment Variable (the -e tag)</h3>
 
 ```
--e Dependencies ="dep1 dep2 dep3" \
+-e Pip_Depenendcies ="dep1 dep2 dep3" \ 
+-e Apt_Dependencies ="dep1 dep2 dep3" \
 ```
 
-where `dep1` `dep2` and `dep3` are the library names. Its good to use the Pytohn Package Index (https://pypi.org/) for this.
+where `dep1` `dep2` and `dep3` are the library names. Its good to use the Python Package Index (https://pypi.org/) for this.
