@@ -1,17 +1,19 @@
 # pythondiscordbots
 Run Python-based discord bots in Docker
+Image based on the Ubuntu base image
 
 <h2> Docker Image</h2>
-<strong>NOTE:</strong> Replace bot.py and the pip3 Dependencies with values that suit your needs.
+<strong>NOTE:</strong> Replace bot.py, pip3 & apt Dependencies with values that suit your needs.
 
-Discord.py is preinstalled!
+discord.py requests pytz simplejson come preinstalled!
 
 
 ```
 docker create \
   --name=PythonBot \
-  -e BOTFileName=bot.py \
-  -e Dependencies ="pytz simplejson requests pythonping iperf3" \
+  -e BOTFileName="<!optional>" \ 
+  -e Pip_Depenendcies ="<!optional>" \ 
+  -e Apt_Dependencies ="<!optional>" \ 
   -v /path/to/bot:/mnt/bot \
   --restart unless-stopped \
   tomscatbilly/pythondiscordbots
