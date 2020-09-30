@@ -11,7 +11,7 @@ RUN apt-get update && apt-get -y install sudo
 RUN sudo apt install -y python3 python3-pip curl
 RUN sudo apt install -y ${Apt_Dependencies}
 RUN sudo apt update
-RUN pip3 install discord.py==1.3.4 requests pytz simplejson
+RUN pip3 install discord.py==1.5.0 requests pytz simplejson docker
 RUN pip3 install ${Pip_Depenendcies}
 
 RUN echo "Installed Depenendcies"
