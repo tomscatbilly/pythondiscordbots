@@ -20,7 +20,7 @@ docker create \
   tomscatbilly/pythondiscordbots
 ```
 
-<h2>LOading a specific Discord.py Verison<h2>
+<h2>Loading a specific Discord.py Verison</h2>
 By default, it loads version 1.6.0, but can load a specific version if needed by changing the environment variable 'DISCORD_PY_VERSION' to be the version you need. 
 E.g. ```-e DISCORD_PY_VERSION ="1.5.1"```
 
